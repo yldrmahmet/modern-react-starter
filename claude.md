@@ -39,7 +39,8 @@ src/
 │   ├── providers.tsx    # Global providers (QueryClient, etc.)
 │   └── router.tsx       # Router configuration
 ├── components/
-│   └── ui/              # shadcn/ui components
+│   ├── ui/              # shadcn/ui components
+│   └── VersionInfo.tsx  # App version display
 ├── lib/
 │   └── utils.ts         # cn() utility
 ├── main.tsx             # Entry point
