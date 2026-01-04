@@ -23,8 +23,8 @@ Production-ready React starter with modern tooling.
 
 ```bash
 # Clone
-git clone https://github.com/yldrmahmet/react-template.git
-cd react-template
+git clone https://github.com/yldrmahmet/modern-react-starter.git
+cd modern-react-starter
 
 # Install
 bun install
