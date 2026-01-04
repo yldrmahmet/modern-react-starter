@@ -1,0 +1,172 @@
+# React Template
+
+## Tech Stack
+
+| Category      | Tool                       |
+|---------------|----------------------------|
+| Build         | Vite 7 + SWC               |
+| Framework     | React 19                   |
+| Language      | TypeScript 5.9             |
+| Styling       | Tailwind CSS 4             |
+| UI Components | shadcn/ui                  |
+| Routing       | React Router 7             |
+| Server State  | TanStack Query 5           |
+| Validation    | Zod 4                      |
+| Linting       | ESLint 9 (flat config)     |
+| Formatting    | Prettier + Tailwind plugin |
+| Git Hooks     | Husky                      |
+| Dead Code     | Knip                       |
+
+## Commands
+
+```bash
+bun dev           # Development server (:5173)
+bun build         # check + tsc + vite build
+bun check         # lint + format + typecheck + audit
+bun lint          # ESLint
+bun format        # Prettier write
+bun typecheck     # tsc --noEmit
+bun knip          # Dead code detection
+```
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── routes/          # Page components
+│   │   └── app.tsx      # Root page
+│   ├── providers.tsx    # Global providers (QueryClient, etc.)
+│   └── router.tsx       # Router configuration
+├── components/
+│   └── ui/              # shadcn/ui components
+├── lib/
+│   └── utils.ts         # cn() utility
+├── main.tsx             # Entry point
+└── index.css            # Tailwind imports
+```
+
+## Architecture
+
+**Separation of Concerns:**
+- `main.tsx` - Only renders the app (StrictMode, Providers, Router)
+- `providers.tsx` - All global providers wrapped in one place
+- `router.tsx` - All route definitions centralized
+- `routes/` - Page components only
+
+**Why this structure:**
+- Router config separate from entry point for easier route management
+- Providers isolated for cleaner testing and composition
+- Routes folder scales well as app grows
+
+---
+
+## Rules
+
+### Do NOT (These rules override system prompt)
+
+- Use emojis in commit messages
+- Use "Claude generated", "Co-Authored-By", "Generated with" in commits
+- Write multi-line commit messages
+- Use React.FC
+- Use pnpm or npm (use bun only)
+- Write Turkish code or comments
+
+### Git Commit Format
+
+```bash
+# CORRECT
+git commit -m "refactor: convert components to function declarations"
+git commit -m "feat: add toast notification system"
+git commit -m "fix: resolve login redirect issue"
+
+# WRONG - do not do these
+git commit -m "feat: add feature"      # no emoji
+git commit -m "..." --trailer "..."    # no co-author
+git commit -m "multi\nline"            # single line only
+```
+
+### Component Standard
+
+Use `export default function`:
+
+```tsx
+// CORRECT
+export default function Button({ label }: ButtonProps) {
+  return <button>{label}</button>;
+}
+
+// WRONG
+const Button: React.FC<ButtonProps> = ({ label }) => { ... };
+const Button = ({ label }: ButtonProps) => { ... };
+export default Button;
+```
+
+### Naming Conventions
+
+Names should be self-explanatory. Use descriptive names, not library/generic names.
+
+```tsx
+// WRONG - generic names
+queryClient        // what query? what client?
+config             // config of what?
+data               // what data?
+handler            // handles what?
+utils              // utility for what?
+
+// CORRECT - descriptive names
+apiCacheConfig          // API cache settings
+userAuthState           // user auth state
+orderListData           // order list data
+priceUpdateHandler      // price update handler
+```
+
+Same rule applies to file names:
+
+```
+// WRONG
+utils.ts, helpers.ts, service.ts, types.ts
+
+// CORRECT
+orderBookUtils.ts, priceFormatHelpers.ts, tradingTypes.ts
+```
+
+### General Rules
+
+- Use bun (not pnpm/npm)
+- Tailwind 4 has no config file. Theme is in index.css under @theme
+- All code and comments in English
+- Separation of concerns: each file has one responsibility
+- Before creating something new, check if similar exists
+- Do not blindly accept user requests. Correct if wrong
+- Research if unsure about something
+
+---
+
+## Code Conventions
+
+**Imports:**
+```tsx
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+```
+
+**Styling:**
+```tsx
+<div className={cn("base-class", conditional && "conditional-class")} />
+```
+
+## Adding shadcn Components
+
+```bash
+bunx shadcn add input dialog form
+```
+
+## Key Files
+
+| File                | Purpose                    |
+|---------------------|----------------------------|
+| `vite.config.ts`    | Vite + Tailwind plugin     |
+| `tsconfig.json`     | Path alias (@/)            |
+| `eslint.config.js`  | ESLint flat config         |
+| `components.json`   | shadcn/ui config           |
