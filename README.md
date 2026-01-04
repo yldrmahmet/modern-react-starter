@@ -18,6 +18,8 @@ Production-ready React starter with modern tooling.
 | Formatting    | Prettier                   |
 | Git Hooks     | Husky                      |
 | Dead Code     | Knip                       |
+| Testing       | Vitest                     |
+| CI/CD         | GitHub Actions             |
 
 ## Quick Start
 
@@ -43,6 +45,8 @@ bun lint          # ESLint
 bun format        # Prettier
 bun typecheck     # TypeScript check
 bun knip          # Dead code detection
+bun test          # Run tests (watch)
+bun test:run      # Run tests once
 ```
 
 ## Project Structure

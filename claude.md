@@ -16,6 +16,7 @@
 | Formatting    | Prettier + Tailwind plugin |
 | Git Hooks     | Husky                      |
 | Dead Code     | Knip                       |
+| Testing       | Vitest + Testing Library   |
 
 ## Commands
 
@@ -27,6 +28,8 @@ bun lint          # ESLint
 bun format        # Prettier write
 bun typecheck     # tsc --noEmit
 bun knip          # Dead code detection
+bun test          # Run tests (watch mode)
+bun test:run      # Run tests once
 ```
 
 ## Project Structure
@@ -171,3 +174,4 @@ bunx shadcn add input dialog form
 | `tsconfig.json`     | Path alias (@/)            |
 | `eslint.config.js`  | ESLint flat config         |
 | `components.json`   | shadcn/ui config           |
+| `.github/workflows` | CI/CD pipeline             |
