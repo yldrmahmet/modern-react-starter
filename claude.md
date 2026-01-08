@@ -22,7 +22,7 @@
 
 ```bash
 bun dev           # Development server (:5173)
-bun build         # check + tsc + vite build
+bun run build     # check + tsc + vite build (not bun build!)
 bun check         # lint + format + typecheck + audit
 bun lint          # ESLint
 bun format        # Prettier write

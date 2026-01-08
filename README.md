@@ -39,7 +39,7 @@ bun dev
 
 ```bash
 bun dev           # Development server (:5173)
-bun build         # Production build
+bun run build     # Production build (Vite)
 bun check         # Lint + format + typecheck + audit
 bun lint          # ESLint
 bun format        # Prettier
