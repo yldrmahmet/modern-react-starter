@@ -5,73 +5,73 @@
 <div class="tech-grid">
 
 <a href="https://vite.dev" class="tech-card" target="_blank">
-  <img src="/vite.svg" alt="Vite" />
+  <img src="/images/vite.svg" alt="Vite" />
   <h3>Vite 7</h3>
   <p>即座の HMR を持つビルドツール</p>
 </a>
 
 <a href="https://react.dev" class="tech-card" target="_blank">
-  <img src="/react.svg" alt="React" />
+  <img src="/images/react.svg" alt="React" />
   <h3>React 19</h3>
   <p>UI ライブラリ</p>
 </a>
 
 <a href="https://www.typescriptlang.org" class="tech-card" target="_blank">
-  <img src="/typescript.svg" alt="TypeScript" />
+  <img src="/images/typescript.svg" alt="TypeScript" />
   <h3>TypeScript 5.9</h3>
   <p>型安全な JavaScript</p>
 </a>
 
 <a href="https://tailwindcss.com" class="tech-card" target="_blank">
-  <img src="/tailwind.svg" alt="Tailwind CSS" />
+  <img src="/images/tailwind.svg" alt="Tailwind CSS" />
   <h3>Tailwind CSS 4</h3>
   <p>ユーティリティファースト CSS</p>
 </a>
 
 <a href="https://ui.shadcn.com" class="tech-card" target="_blank">
-  <img src="/shadcn.svg" alt="shadcn/ui" />
+  <img src="/images/shadcn.svg" alt="shadcn/ui" />
   <h3>shadcn/ui</h3>
   <p>UI コンポーネント</p>
 </a>
 
 <a href="https://reactrouter.com" class="tech-card" target="_blank">
-  <img src="/reactrouter.svg" alt="React Router" />
+  <img src="/images/reactrouter.svg" alt="React Router" />
   <h3>React Router 7</h3>
   <p>クライアントサイドルーティング</p>
 </a>
 
 <a href="https://tanstack.com/query" class="tech-card" target="_blank">
-  <img src="/tanstack.svg" alt="TanStack Query" />
+  <img src="/images/tanstack.svg" alt="TanStack Query" />
   <h3>TanStack Query 5</h3>
   <p>サーバー状態管理</p>
 </a>
 
 <a href="https://zod.dev" class="tech-card" target="_blank">
-  <img src="/zod.svg" alt="Zod" />
+  <img src="/images/zod.svg" alt="Zod" />
   <h3>Zod 4</h3>
   <p>スキーマバリデーション</p>
 </a>
 
 <a href="https://eslint.org" class="tech-card" target="_blank">
-  <img src="/eslint.svg" alt="ESLint" />
+  <img src="/images/eslint.svg" alt="ESLint" />
   <h3>ESLint 9</h3>
   <p>コードのバグ発見</p>
 </a>
 
 <a href="https://prettier.io" class="tech-card" target="_blank">
-  <img src="/prettier.svg" alt="Prettier" />
+  <img src="/images/prettier.svg" alt="Prettier" />
   <h3>Prettier</h3>
   <p>コードフォーマッター</p>
 </a>
 
 <a href="https://vitest.dev" class="tech-card" target="_blank">
-  <img src="/vitest.svg" alt="Vitest" />
+  <img src="/images/vitest.svg" alt="Vitest" />
   <h3>Vitest</h3>
   <p>ユニットテスト</p>
 </a>
 
 <a href="https://typicode.github.io/husky" class="tech-card" target="_blank">
-  <img src="/husky.svg" alt="Husky" />
+  <img src="/images/husky.svg" alt="Husky" />
   <h3>Husky</h3>
   <p>Git フック</p>
 </a>

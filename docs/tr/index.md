@@ -15,19 +15,19 @@ hero:
 
 features:
   - icon:
-      src: /vite.svg
+      src: /images/vite.svg
     title: Vite 7 + SWC
     details: Anında değişiklik yansıması ve optimize edilmiş derleme ile süper hızlı geliştirme
   - icon:
-      src: /tailwind.svg
+      src: /images/tailwind.svg
     title: Tailwind CSS 4
     details: En güncel özellikler ve performans iyileştirmeleriyle modern CSS
   - icon:
-      src: /box.svg
+      src: /images/box.svg
     title: Kurulum Gerektirmez
     details: Her şey ayarlanmış. Sadece çalıştır ve kodlamaya başla
   - icon:
-      src: /more.svg
+      src: /images/more.svg
     title: Ve Dahası...
     details: React 19, TypeScript, shadcn/ui, React Router, TanStack Query, ESLint, Vitest, Husky
     link: /tr/guide/tech-stack

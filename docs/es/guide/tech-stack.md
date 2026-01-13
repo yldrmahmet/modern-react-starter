@@ -5,73 +5,73 @@ Todas las herramientas incluidas en tu app:
 <div class="tech-grid">
 
 <a href="https://vite.dev" class="tech-card" target="_blank">
-  <img src="/vite.svg" alt="Vite" />
+  <img src="/images/vite.svg" alt="Vite" />
   <h3>Vite 7</h3>
   <p>Build tool con HMR instantáneo</p>
 </a>
 
 <a href="https://react.dev" class="tech-card" target="_blank">
-  <img src="/react.svg" alt="React" />
+  <img src="/images/react.svg" alt="React" />
   <h3>React 19</h3>
   <p>Librería UI</p>
 </a>
 
 <a href="https://www.typescriptlang.org" class="tech-card" target="_blank">
-  <img src="/typescript.svg" alt="TypeScript" />
+  <img src="/images/typescript.svg" alt="TypeScript" />
   <h3>TypeScript 5.9</h3>
   <p>JavaScript con tipos</p>
 </a>
 
 <a href="https://tailwindcss.com" class="tech-card" target="_blank">
-  <img src="/tailwind.svg" alt="Tailwind CSS" />
+  <img src="/images/tailwind.svg" alt="Tailwind CSS" />
   <h3>Tailwind CSS 4</h3>
   <p>CSS utility-first</p>
 </a>
 
 <a href="https://ui.shadcn.com" class="tech-card" target="_blank">
-  <img src="/shadcn.svg" alt="shadcn/ui" />
+  <img src="/images/shadcn.svg" alt="shadcn/ui" />
   <h3>shadcn/ui</h3>
   <p>Componentes UI</p>
 </a>
 
 <a href="https://reactrouter.com" class="tech-card" target="_blank">
-  <img src="/reactrouter.svg" alt="React Router" />
+  <img src="/images/reactrouter.svg" alt="React Router" />
   <h3>React Router 7</h3>
   <p>Routing del lado cliente</p>
 </a>
 
 <a href="https://tanstack.com/query" class="tech-card" target="_blank">
-  <img src="/tanstack.svg" alt="TanStack Query" />
+  <img src="/images/tanstack.svg" alt="TanStack Query" />
   <h3>TanStack Query 5</h3>
   <p>Gestión de estado del servidor</p>
 </a>
 
 <a href="https://zod.dev" class="tech-card" target="_blank">
-  <img src="/zod.svg" alt="Zod" />
+  <img src="/images/zod.svg" alt="Zod" />
   <h3>Zod 4</h3>
   <p>Validación de esquemas</p>
 </a>
 
 <a href="https://eslint.org" class="tech-card" target="_blank">
-  <img src="/eslint.svg" alt="ESLint" />
+  <img src="/images/eslint.svg" alt="ESLint" />
   <h3>ESLint 9</h3>
   <p>Encontrar bugs en código</p>
 </a>
 
 <a href="https://prettier.io" class="tech-card" target="_blank">
-  <img src="/prettier.svg" alt="Prettier" />
+  <img src="/images/prettier.svg" alt="Prettier" />
   <h3>Prettier</h3>
   <p>Formateador de código</p>
 </a>
 
 <a href="https://vitest.dev" class="tech-card" target="_blank">
-  <img src="/vitest.svg" alt="Vitest" />
+  <img src="/images/vitest.svg" alt="Vitest" />
   <h3>Vitest</h3>
   <p>Tests unitarios</p>
 </a>
 
 <a href="https://typicode.github.io/husky" class="tech-card" target="_blank">
-  <img src="/husky.svg" alt="Husky" />
+  <img src="/images/husky.svg" alt="Husky" />
   <h3>Husky</h3>
   <p>Hooks de Git</p>
 </a>

@@ -15,19 +15,19 @@ hero:
 
 features:
   - icon:
-      src: /vite.svg
+      src: /images/vite.svg
     title: Vite 7 + SWC
     details: Lightning fast development with instant HMR and optimized builds
   - icon:
-      src: /tailwind.svg
+      src: /images/tailwind.svg
     title: Tailwind CSS 4
     details: Utility-first CSS with the latest features and performance improvements
   - icon:
-      src: /box.svg
+      src: /images/box.svg
     title: Zero Config
     details: Everything pre-configured. Just run and start coding
   - icon:
-      src: /more.svg
+      src: /images/more.svg
     title: And More...
     details: React 19, TypeScript, shadcn/ui, React Router, TanStack Query, ESLint, Vitest, Husky
     link: /guide/tech-stack
