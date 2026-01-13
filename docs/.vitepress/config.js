@@ -11,7 +11,7 @@ export default defineConfig({
   description: 'Create modern React apps with Vite, TypeScript, Tailwind, shadcn/ui',
 
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]
   ],
 
   themeConfig: {
