@@ -2,17 +2,49 @@
 
 ## Basic Use
 
-```bash
+::: code-group
+
+```bash [npm]
 npm create ronins-react@latest [name] [options]
 ```
+
+```bash [bun]
+bun create ronins-react@latest [name] [options]
+```
+
+```bash [pnpm]
+pnpm create ronins-react@latest [name] [options]
+```
+
+```bash [yarn]
+yarn create ronins-react@latest [name] [options]
+```
+
+:::
 
 ## Name
 
 The folder name for your app:
 
-```bash
+::: code-group
+
+```bash [npm]
 npm create ronins-react@latest my-app
 ```
+
+```bash [bun]
+bun create ronins-react@latest my-app
+```
+
+```bash [pnpm]
+pnpm create ronins-react@latest my-app
+```
+
+```bash [yarn]
+yarn create ronins-react@latest my-app
+```
+
+:::
 
 Creates `my-app/` folder.
 
@@ -22,11 +54,29 @@ Creates `my-app/` folder.
 
 Use `.` to create in current folder:
 
-```bash
-mkdir my-app
-cd my-app
+::: code-group
+
+```bash [npm]
+mkdir my-app && cd my-app
 npm create ronins-react@latest .
 ```
+
+```bash [bun]
+mkdir my-app && cd my-app
+bun create ronins-react@latest .
+```
+
+```bash [pnpm]
+mkdir my-app && cd my-app
+pnpm create ronins-react@latest .
+```
+
+```bash [yarn]
+mkdir my-app && cd my-app
+yarn create ronins-react@latest .
+```
+
+:::
 
 ::: warning
 Folder must be empty!
@@ -38,9 +88,25 @@ Folder must be empty!
 
 Creates minimal app. No demo files.
 
-```bash
+::: code-group
+
+```bash [npm]
 npm create ronins-react@latest my-app --clean
 ```
+
+```bash [bun]
+bun create ronins-react@latest my-app --clean
+```
+
+```bash [pnpm]
+pnpm create ronins-react@latest my-app --clean
+```
+
+```bash [yarn]
+yarn create ronins-react@latest my-app --clean
+```
+
+:::
 
 **Removes:**
 - `src/app/routes/stack.tsx` (demo page)
@@ -60,24 +126,7 @@ The CLI knows which package manager you use:
 | `pnpm create ronins-react@latest` | pnpm |
 | `yarn create ronins-react@latest` | yarn |
 
-README file uses your package manager's commands.
-
-## Examples
-
-**npm:**
-```bash
-npm create ronins-react@latest my-app
-```
-
-**bun with clean mode:**
-```bash
-bun create ronins-react@latest my-app --clean
-```
-
-**In current folder:**
-```bash
-pnpm create ronins-react@latest .
-```
+README and CLAUDE.md files use your package manager's commands.
 
 ## Errors
 

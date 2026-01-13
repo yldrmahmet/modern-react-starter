@@ -74,10 +74,29 @@ We tested many tools and picked the best ones:
 
 ### Zero Decision Fatigue
 
-```bash
+::: code-group
+
+```bash [npm]
 npm create ronins-react@latest my-app
 cd my-app && npm install && npm run dev
 ```
+
+```bash [bun]
+bun create ronins-react@latest my-app
+cd my-app && bun install && bun dev
+```
+
+```bash [pnpm]
+pnpm create ronins-react@latest my-app
+cd my-app && pnpm install && pnpm dev
+```
+
+```bash [yarn]
+yarn create ronins-react@latest my-app
+cd my-app && yarn && yarn dev
+```
+
+:::
 
 That's it. No configuration. No research. Just code.
 

@@ -42,9 +42,25 @@ Open `http://localhost:5173` in your browser. Done!
 
 Want a minimal app? No demo pages? Use `--clean`:
 
-```bash
+::: code-group
+
+```bash [npm]
 npm create ronins-react@latest my-app --clean
 ```
+
+```bash [bun]
+bun create ronins-react@latest my-app --clean
+```
+
+```bash [pnpm]
+pnpm create ronins-react@latest my-app --clean
+```
+
+```bash [yarn]
+yarn create ronins-react@latest my-app --clean
+```
+
+:::
 
 This removes:
 - Demo pages
@@ -56,11 +72,29 @@ You get a simple "Hello World" app.
 
 Want to create in the folder you are in? Use `.`:
 
-```bash
-mkdir my-app
-cd my-app
+::: code-group
+
+```bash [npm]
+mkdir my-app && cd my-app
 npm create ronins-react@latest .
 ```
+
+```bash [bun]
+mkdir my-app && cd my-app
+bun create ronins-react@latest .
+```
+
+```bash [pnpm]
+mkdir my-app && cd my-app
+pnpm create ronins-react@latest .
+```
+
+```bash [yarn]
+mkdir my-app && cd my-app
+yarn create ronins-react@latest .
+```
+
+:::
 
 ::: warning
 The folder must be empty.
