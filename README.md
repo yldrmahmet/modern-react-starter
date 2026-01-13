@@ -163,7 +163,7 @@ bunx shadcn add form input
 
 ## Documentation
 
-Full documentation: [ronins-react.roninslab.com](https://ronins-react.roninslab.com)
+Full documentation: [package.roninslab.com](https://package.roninslab.com)
 
 ---
 
