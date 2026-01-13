@@ -125,6 +125,56 @@ const koSidebar = [
   }
 ]
 
+const ptNav = [
+  { text: 'Guia', link: '/pt/guide/getting-started' },
+  { text: 'GitHub', link: 'https://github.com/yldrmahmet/create-ronins-react' }
+]
+
+const ptSidebar = [
+  {
+    text: 'Introdução',
+    items: [
+      { text: 'O que é Ronins React?', link: '/pt/guide/what-is-ronins-react' },
+      { text: 'Começar', link: '/pt/guide/getting-started' },
+      { text: 'Stack Tecnológico', link: '/pt/guide/tech-stack' }
+    ]
+  },
+  {
+    text: 'Guia',
+    items: [
+      { text: 'Estrutura do Projeto', link: '/pt/guide/project-structure' },
+      { text: 'Comandos', link: '/pt/guide/commands' },
+      { text: 'Adicionar Componentes', link: '/pt/guide/adding-components' },
+      { text: 'Opções de CLI', link: '/pt/guide/cli-options' }
+    ]
+  }
+]
+
+const deNav = [
+  { text: 'Anleitung', link: '/de/guide/getting-started' },
+  { text: 'GitHub', link: 'https://github.com/yldrmahmet/create-ronins-react' }
+]
+
+const deSidebar = [
+  {
+    text: 'Einführung',
+    items: [
+      { text: 'Was ist Ronins React?', link: '/de/guide/what-is-ronins-react' },
+      { text: 'Erste Schritte', link: '/de/guide/getting-started' },
+      { text: 'Tech Stack', link: '/de/guide/tech-stack' }
+    ]
+  },
+  {
+    text: 'Anleitung',
+    items: [
+      { text: 'Projektstruktur', link: '/de/guide/project-structure' },
+      { text: 'Befehle', link: '/de/guide/commands' },
+      { text: 'Komponenten hinzufügen', link: '/de/guide/adding-components' },
+      { text: 'CLI-Optionen', link: '/de/guide/cli-options' }
+    ]
+  }
+]
+
 export default defineConfig({
   vite: {
     server: {
@@ -238,6 +288,52 @@ export default defineConfig({
         sidebarMenuLabel: '메뉴',
         darkModeSwitchLabel: '테마',
         langMenuLabel: '언어'
+      }
+    },
+    pt: {
+      label: 'Português',
+      lang: 'pt-BR',
+      link: '/pt/',
+      themeConfig: {
+        nav: ptNav,
+        sidebar: ptSidebar,
+        outline: {
+          label: 'Nesta página'
+        },
+        docFooter: {
+          prev: 'Anterior',
+          next: 'Próximo'
+        },
+        lastUpdated: {
+          text: 'Última atualização'
+        },
+        returnToTopLabel: 'Voltar ao topo',
+        sidebarMenuLabel: 'Menu',
+        darkModeSwitchLabel: 'Aparência',
+        langMenuLabel: 'Idioma'
+      }
+    },
+    de: {
+      label: 'Deutsch',
+      lang: 'de',
+      link: '/de/',
+      themeConfig: {
+        nav: deNav,
+        sidebar: deSidebar,
+        outline: {
+          label: 'Auf dieser Seite'
+        },
+        docFooter: {
+          prev: 'Zurück',
+          next: 'Weiter'
+        },
+        lastUpdated: {
+          text: 'Zuletzt aktualisiert'
+        },
+        returnToTopLabel: 'Zurück nach oben',
+        sidebarMenuLabel: 'Menü',
+        darkModeSwitchLabel: 'Erscheinungsbild',
+        langMenuLabel: 'Sprache'
       }
     }
   },
