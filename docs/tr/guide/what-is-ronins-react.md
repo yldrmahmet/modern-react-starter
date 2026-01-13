@@ -1,110 +1,110 @@
 # Ronins React Nedir?
 
-Ronins React bir araçtır. Senin için React uygulamaları oluşturur. Tüm araçlar hazır. Sen sadece kod yaz.
+Ronins React bir proje oluşturma aracı. Senin için React projeleri hazırlıyor. Tüm araçlar kurulu geliyor. Sen sadece koduna odaklan.
 
-## Problem
+## Sorun
 
-JavaScript'te çok fazla araç var. Her hafta yeni araçlar çıkıyor. Seçim yapmak zor.
+JavaScript ekosisteminde çok fazla araç var. Her hafta yenileri çıkıyor. Hangisini seçeceğini bilmek zor.
 
 **Bazı rakamlar:**
 
 - npm'de **3 milyon paket** var
-- Çoğu paket eski veya güvenli değil
-- React hala **1 numara** — geliştiricilerin %40'ı kullanıyor
-- 11 milyon web sitesi React kullanıyor
+- Çoğu güncel değil veya güvenilir değil
+- React hala **en popüler** — geliştiricilerin %40'ı kullanıyor
+- 11 milyon web sitesi React ile yapılmış
 
-Problem React değil. Problem: **React ile hangi araçları kullanmalı?**
+Sorun React değil. Sorun: **React ile hangi araçları kullanmalı?**
 
-## Neden Diğer Seçenekler Değil?
+## Neden Diğerleri Değil?
 
 ### Neden `npm create vite` değil?
 
-Vite harika. Ama sana **sadece Vite + React** veriyor.
+Vite mükemmel bir araç. Ama sana **sadece Vite + React** veriyor.
 
-Hala şunları eklemen gerekiyor:
-- Tailwind CSS (stillendirme)
-- React Router (sayfalar)
-- TanStack Query (API çağrıları)
-- ESLint (hata bulma)
-- Prettier (kod formatlama)
-- Husky (git kontrolleri)
-- shadcn/ui (butonlar, diyaloglar)
+Bunları kendin eklemelisin:
+- Tailwind CSS (stil için)
+- React Router (sayfalar için)
+- TanStack Query (API istekleri için)
+- ESLint (hata yakalamak için)
+- Prettier (kod düzenlemek için)
+- Husky (commit kontrolü için)
+- shadcn/ui (hazır bileşenler için)
 
-Bu **saatler** alır. Ronins React ile **30 saniye** alır.
+Bunlar **saatler** alır. Ronins React ile **30 saniye**.
 
 ### Neden Next.js değil?
 
-Next.js büyük bir framework. Şunları içerir:
+Next.js kapsamlı bir framework. İçinde şunlar var:
 - Server Components
 - App Router
 - Server Actions
-- Birçok karmaşık özellik
+- Birçok gelişmiş özellik
 
-**Next.js şunlar için iyi:** SEO gerektiren web siteleri (Google sıralaması).
+**Next.js şunlar için ideal:** SEO gereken siteler (Google sıralaması önemli).
 
-**Ama birçok uygulama buna ihtiyaç duymaz:**
-- Admin panelleri
-- Dahili araçlar
-- Tek sayfa uygulamaları (SPA)
+**Ama birçok proje bunlara ihtiyaç duymaz:**
+- Yönetim panelleri
+- Şirket içi araçlar
+- Tek sayfa uygulamalar (SPA)
 
-Bunlar için Next.js **çok karmaşık**. Ronins React daha basit.
+Bunlar için Next.js **gereğinden fazla**. Ronins React daha sade.
 
 ### Neden TanStack Start değil?
 
-TanStack Start çok yeni. Hala beta. Çok değişebilir. Henüz stabil değil.
+TanStack Start henüz çok yeni. Beta aşamasında. Sık değişiyor. Henüz olgunlaşmadı.
 
-Ronins React **sadece stabil araçlar** kullanır. Beta yok. Breaking changes yok.
+Ronins React **sadece güvenilir araçlar** kullanır. Beta yok. Beklenmedik değişiklik yok.
 
 ### Neden Create React App değil?
 
-Create React App (CRA) öldü. 2023'ten beri güncelleme yok. Yavaş olan Webpack kullanıyor.
+Create React App (CRA) artık geliştirilmiyor. 2023'ten beri güncelleme almadı. Yavaş olan Webpack kullanıyor.
 
 Ronins React Vite kullanıyor. Vite **10 kat daha hızlı**.
 
-## Sana Ne Veriyoruz
+## Sana Ne Sunuyoruz
 
-| İhtiyacın | Sana Verdiğimiz | Neden Bu |
-|-----------|-----------------|----------|
-| Build aracı | Vite 7 | Çok hızlı |
-| Dil | TypeScript | Hataları erken bulur |
-| Stillendirme | Tailwind CSS 4 | Kullanımı kolay |
+| İhtiyaç | Çözüm | Neden Bu |
+|---------|-------|----------|
+| Derleme aracı | Vite 7 | Süper hızlı |
+| Dil | TypeScript | Hataları erkenden yakalar |
+| Stil | Tailwind CSS 4 | Kullanımı kolay |
 | Bileşenler | shadcn/ui | Kod sana ait |
-| Sayfalar | React Router 7 | En popüler |
-| API çağrıları | TanStack Query 5 | En iyi önbellekleme |
+| Sayfalar | React Router 7 | En yaygın |
+| API istekleri | TanStack Query 5 | En iyi önbellekleme |
 | Doğrulama | Zod 4 | Tip güvenli |
-| Hata bulucu | ESLint 9 | Modern kurallar |
-| Formatlayıcı | Prettier | Temiz kod |
-| Git hooks | Husky | Commit öncesi kontrol |
+| Hata yakalama | ESLint 9 | Güncel kurallar |
+| Kod düzeni | Prettier | Tutarlı kod |
+| Commit kontrolü | Husky | Kalite garantisi |
 | Test | Vitest | Hızlı testler |
 
-**Hepsi yapılandırılmış. Hepsi birlikte çalışıyor.**
+**Hepsi ayarlanmış. Hepsi uyumlu çalışıyor.**
 
-## Kurallarımız
+## İlkelerimiz
 
-### 1. Kullanıma Hazır
+### 1. Hemen Kullanıma Hazır
 
-Kurulum yok. Yapılandırma yok. Sadece çalıştır ve kodla.
+Kurulum derdi yok. Ayar yapma yok. Çalıştır ve kodla.
 
-### 2. Yeni ama Stabil
+### 2. Güncel ama Güvenilir
 
-Yeni sürümleri kullanıyoruz. Ama sadece stabil olanları. Beta yok.
+En son sürümleri kullanıyoruz. Ama sadece stabil olanları. Beta yok.
 
-### 3. Basit
+### 3. Sade
 
-Ekstra araç yok. Sadece ihtiyacın olan. İstersen sonra daha fazla ekle.
+Gereksiz araç yok. Sadece ihtiyacın olan. Sonra istersen eklersin.
 
 ### 4. Kod Sana Ait
 
-shadcn/ui bileşenleri senin kodunda. node_modules'da değil. Değiştirebilirsin.
+shadcn/ui bileşenleri senin proje dosyalarında. node_modules'da değil. İstediğin gibi değiştirebilirsin.
 
-## Kimler Kullanmalı?
+## Kimler İçin?
 
-- **Yeni geliştiriciler** — Yapılandırma ile vakit kaybetme
-- **Deneyimli geliştiriciler** — Sıkıcı kurulumu atla
-- **Takımlar** — Herkes için aynı araçlar
-- **Startup'lar** — Hızlı gönder, temiz kal
+- **Yeni başlayanlar** — Kurulumla vakit kaybetme
+- **Deneyimli geliştiriciler** — Sıkıcı ayarları atla
+- **Takımlar** — Herkes aynı araçları kullansın
+- **Startup'lar** — Hızlı başla, temiz kal
 
-## Hızlı Başlangıç
+## Hemen Başla
 
 ::: code-group
 
@@ -138,10 +138,10 @@ yarn dev
 
 :::
 
-**30 saniye. Tamam.**
+**30 saniye. Hazır.**
 
 ---
 
-**React web'e güç veriyor. Biz React kurulumuna güç veriyoruz.**
+**React web'in temelini oluşturuyor. Biz de senin React temelini oluşturuyoruz.**
 
-[Şimdi Başla →](/tr/guide/getting-started)
+[Hemen Başla →](/tr/guide/getting-started)

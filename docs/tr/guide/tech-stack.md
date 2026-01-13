@@ -1,73 +1,73 @@
-# Teknoloji Yığını
+# Kullanılan Teknolojiler
 
-Uygulamanıza dahil tüm araçlar:
+Projene dahil tüm araçlar:
 
 <div class="tech-grid">
 
 <a href="https://vite.dev" class="tech-card" target="_blank">
   <img src="/vite.svg" alt="Vite" />
   <h3>Vite 7</h3>
-  <p>Anında HMR ile build aracı</p>
+  <p>Anında yansımalı derleme aracı</p>
 </a>
 
 <a href="https://react.dev" class="tech-card" target="_blank">
   <img src="/react.svg" alt="React" />
   <h3>React 19</h3>
-  <p>UI kütüphanesi</p>
+  <p>Arayüz kütüphanesi</p>
 </a>
 
 <a href="https://www.typescriptlang.org" class="tech-card" target="_blank">
   <img src="/typescript.svg" alt="TypeScript" />
   <h3>TypeScript 5.9</h3>
-  <p>Tip-güvenli JavaScript</p>
+  <p>Tip güvenli JavaScript</p>
 </a>
 
 <a href="https://tailwindcss.com" class="tech-card" target="_blank">
   <img src="/tailwind.svg" alt="Tailwind CSS" />
   <h3>Tailwind CSS 4</h3>
-  <p>Utility-first CSS</p>
+  <p>Modern CSS framework'ü</p>
 </a>
 
 <a href="https://ui.shadcn.com" class="tech-card" target="_blank">
   <img src="/shadcn.svg" alt="shadcn/ui" />
   <h3>shadcn/ui</h3>
-  <p>UI bileşenleri</p>
+  <p>Hazır bileşenler</p>
 </a>
 
 <a href="https://reactrouter.com" class="tech-card" target="_blank">
   <img src="/reactrouter.svg" alt="React Router" />
   <h3>React Router 7</h3>
-  <p>İstemci tarafı yönlendirme</p>
+  <p>Sayfa yönetimi</p>
 </a>
 
 <a href="https://tanstack.com/query" class="tech-card" target="_blank">
   <img src="/tanstack.svg" alt="TanStack Query" />
   <h3>TanStack Query 5</h3>
-  <p>Sunucu durumu yönetimi</p>
+  <p>Veri yönetimi</p>
 </a>
 
 <a href="https://zod.dev" class="tech-card" target="_blank">
   <img src="/zod.svg" alt="Zod" />
   <h3>Zod 4</h3>
-  <p>Şema doğrulama</p>
+  <p>Veri doğrulama</p>
 </a>
 
 <a href="https://eslint.org" class="tech-card" target="_blank">
   <img src="/eslint.svg" alt="ESLint" />
   <h3>ESLint 9</h3>
-  <p>Kodda hata bul</p>
+  <p>Kod analizi</p>
 </a>
 
 <a href="https://prettier.io" class="tech-card" target="_blank">
   <img src="/prettier.svg" alt="Prettier" />
   <h3>Prettier</h3>
-  <p>Kod formatlayıcı</p>
+  <p>Kod düzenleyici</p>
 </a>
 
 <a href="https://vitest.dev" class="tech-card" target="_blank">
   <img src="/vitest.svg" alt="Vitest" />
   <h3>Vitest</h3>
-  <p>Birim testi</p>
+  <p>Test framework'ü</p>
 </a>
 
 <a href="https://typicode.github.io/husky" class="tech-card" target="_blank">
@@ -83,85 +83,85 @@ Uygulamanıza dahil tüm araçlar:
 ## Neden Bu Araçlar?
 
 ### Vite
-Vite, React uygulamaları için en hızlı build aracıdır. 1 saniyeden kısa sürede başlar. Değişiklikler anında görünür. Webpack 10 kat daha yavaş. Turbopack da hızlı ama sadece Next.js ile iyi çalışıyor.
+Vite, React projeleri için en hızlı derleme aracı. 1 saniyeden kısa sürede başlıyor. Değişiklikler anında yansıyor. Webpack'ten 10 kat hızlı. Turbopack da hızlı ama sadece Next.js ile iyi çalışıyor.
 
 ---
 
 ### React
-React hala 1 numara. Geliştiricilerin %40'ı kullanıyor. 11 milyon web sitesi React üzerinde çalışıyor. En büyük ekosisteme, en çok iş ilanına ve en çok öğrenme kaynağına sahip.
+React hala lider. Geliştiricilerin %40'ı kullanıyor. 11 milyon web sitesi React ile yapılmış. En büyük ekosisteme, en çok iş ilanına ve en fazla öğrenme kaynağına sahip.
 
 ---
 
 ### TypeScript
-TypeScript, kodunu çalıştırmadan önce hataları bulur. Artık endüstri standardı. Gerçek bir alternatifi yok.
+TypeScript, kodu çalıştırmadan hataları buluyor. Artık sektör standardı. Gerçek bir alternatifi yok.
 
 ---
 
 ### Tailwind CSS
-Tailwind en popüler CSS framework'ü. Stilleri doğrudan HTML'de yazarsın. Ayrı CSS dosyalarına gerek yok. UnoCSS daha hızlı ama Tailwind'in daha büyük topluluğu ve daha iyi IDE desteği var.
+Tailwind en popüler CSS framework'ü. Stilleri doğrudan HTML'de yazıyorsun. Ayrı CSS dosyası gerekmiyor. UnoCSS daha hızlı ama Tailwind'in topluluğu daha büyük ve IDE desteği daha iyi.
 
 ---
 
 ### shadcn/ui
-shadcn/ui farklı. Bileşenler SENİN koduna kopyalanır. Sana ait. Değiştirebilirsin. Sürüm çakışması yok. Breaking güncellemeler yok. Erişilebilirlik için Radix UI üzerine kurulu.
+shadcn/ui farklı çalışıyor. Bileşenler senin proje dosyalarına kopyalanıyor. Sana ait. İstediğin gibi değiştirebilirsin. Sürüm uyumsuzluğu yok. Beklenmedik değişiklik yok. Erişilebilirlik için Radix UI üzerine kurulu.
 
 ---
 
 ### React Router
-React Router, React için en çok kullanılan router. 2014'ten beri var. Çok stabil. Çok kaynak mevcut. TanStack Router daha iyi TypeScript desteğine sahip ama React Router daha kanıtlanmış.
+React Router, React için en yaygın kullanılan sayfa yönetim aracı. 2014'ten beri var. Çok güvenilir. Bol kaynak mevcut. TanStack Router'ın TypeScript desteği daha iyi ama React Router daha olgun.
 
 ---
 
 ### TanStack Query
-TanStack Query, API çağrıları için en iyisi. Veriyi önbelleğe alır. Arka planda günceller. DevTools'u var. Çoğu durumda SWR'dan daha iyi.
+TanStack Query, API istekleri için en iyisi. Verileri önbelleğe alıyor. Arka planda güncelliyor. Geliştirici araçları var. Çoğu durumda SWR'dan daha iyi.
 
 ---
 
 ### Zod
-Zod, verilerin çalışma zamanında doğru olup olmadığını kontrol eder. TypeScript ile harika çalışır. 78+ kütüphane entegrasyonu var. Çok popüler.
+Zod, verilerin doğruluğunu çalışma anında kontrol ediyor. TypeScript ile mükemmel çalışıyor. 78+ kütüphane entegrasyonu var. Çok popüler.
 
-::: tip Valibot'u İzliyoruz
-[Valibot](https://valibot.dev) yeni bir doğrulama kütüphanesi. Zod'dan **%90 daha küçük** (1.37 KB vs 17.7 KB). Aynı API stili. Ekosistemi büyüdüğünde gelecekte Valibot'a geçebiliriz. Şimdilik daha fazla entegrasyona ve dokümantasyona sahip olduğu için Zod kullanıyoruz.
+::: tip Valibot'u Takip Ediyoruz
+[Valibot](https://valibot.dev) yeni bir doğrulama kütüphanesi. Zod'dan **%90 daha küçük** (1.37 KB - 17.7 KB). Aynı kullanım şekli. Ekosistemi büyüdüğünde geçiş yapabiliriz. Şimdilik daha fazla entegrasyona ve dokümantasyona sahip Zod kullanıyoruz.
 :::
 
 ---
 
 ### ESLint + Prettier
-ESLint hataları bulur. Prettier kodu formatlar. Birlikte kodunu temiz tutar.
+ESLint hataları buluyor. Prettier kodu düzenliyor. Birlikte kodunu temiz tutuyor.
 
-::: tip Biome'u İzliyoruz
-[Biome](https://biomejs.dev) yeni bir araç. ESLint + Prettier'ın yaptığını yapıyor ama **20 kat daha hızlı**. İki yerine tek araç. Dört yerine tek yapılandırma dosyası. Gelecekte Biome'a geçebiliriz. Şimdilik ESLint + Prettier kullanıyoruz çünkü:
+::: tip Biome'u Takip Ediyoruz
+[Biome](https://biomejs.dev) yeni bir araç. ESLint + Prettier'ın işini yapıyor ama **20 kat daha hızlı**. İki yerine tek araç. Dört yerine tek ayar dosyası. İleride geçiş yapabiliriz. Şimdilik ESLint + Prettier kullanıyoruz çünkü:
 - ESLint'in 1000+ eklentisi var
-- Biome %80 eklenti kapsamına sahip
+- Biome %80 eklenti desteği sunuyor
 - ESLint için daha fazla kaynak ve yardım mevcut
 
-Biome'un ekosistemi büyüdüğünde geçişi düşüneceğiz.
+Biome olgunlaştığında geçişi değerlendireceğiz.
 :::
 
 ---
 
 ### Vitest
-Vitest, Vite projeleri için yapılmış. Jest'ten 10-20 kat daha hızlı. Jest ile aynı API, öğrenmesi kolay. Vite uygulamaları için açık ara kazanan.
+Vitest, Vite projeleri için tasarlanmış. Jest'ten 10-20 kat hızlı. Jest ile aynı kullanım, öğrenmesi kolay. Vite projeleri için açık ara en iyi seçenek.
 
 ---
 
 ### Husky
-Husky, commit öncesi kontroller çalıştırır. Kötü kodun depona girmemesini sağlar. Haftalık 15M+ indirme ile çok popüler.
+Husky, commit öncesi kontroller çalıştırıyor. Hatalı kodun projeye girmesini engelliyor. Haftalık 15M+ indirme ile çok popüler.
 
 ---
 
-## Gelecek Yol Haritası
+## Gelecek Planları
 
-Sürekli yeni araçları değerlendiriyoruz. İzlediklerimiz:
+Sürekli yeni araçları değerlendiriyoruz. Takip ettiklerimiz:
 
-| Mevcut | İzlenen | Neden |
-|--------|---------|-------|
-| ESLint + Prettier | **Biome** | 20 kat daha hızlı, tek araç |
-| Zod | **Valibot** | %90 daha küçük bundle |
-| Husky | **Lefthook** | Paralel yürütme, %50 daha hızlı |
+| Şu An | Takipte | Neden |
+|-------|---------|-------|
+| ESLint + Prettier | **Biome** | 20 kat hızlı, tek araç |
+| Zod | **Valibot** | %90 daha küçük boyut |
+| Husky | **Lefthook** | Paralel çalışma, %50 daha hızlı |
 | React Router | **TanStack Router** | Daha iyi TypeScript desteği |
 
-**Hızdan önce kararlılığı** önceliklendiriyoruz. Bu alternatifler olgunlaştığında geçişi değerlendireceğiz.
+**Hızdan önce güvenilirliği** tercih ediyoruz. Bu alternatifler olgunlaştığında değerlendireceğiz.
 
 <style>
 .tech-grid {

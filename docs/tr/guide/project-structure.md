@@ -1,24 +1,24 @@
 # Proje Yapısı
 
-Uygulamanız şöyle görünür:
+Projen şöyle görünüyor:
 
 ```
 my-app/
 ├── public/
-│   └── ronins.svg          # Logo (--clean ile kaldırılır)
+│   └── ronins.svg          # Logo (--clean ile silinir)
 ├── src/
 │   ├── app/
 │   │   ├── routes/         # Sayfaların
 │   │   │   ├── app.tsx     # Ana sayfa
-│   │   │   └── stack.tsx   # Demo sayfası (--clean ile kaldırılır)
-│   │   ├── providers.tsx   # Uygulama kurulumu
-│   │   └── router.tsx      # Sayfa rotaları
+│   │   │   └── stack.tsx   # Demo sayfası (--clean ile silinir)
+│   │   ├── providers.tsx   # Uygulama ayarları
+│   │   └── router.tsx      # Sayfa tanımları
 │   ├── components/
-│   │   └── ui/             # UI bileşenleri (butonlar vb.)
+│   │   └── ui/             # Arayüz bileşenleri (buton vb.)
 │   │       └── button.tsx
 │   ├── lib/
 │   │   └── utils.ts        # Yardımcı fonksiyonlar
-│   ├── main.tsx            # Uygulama burada başlar
+│   ├── main.tsx            # Giriş noktası
 │   └── index.css           # Stiller
 ├── index.html
 ├── package.json
@@ -30,7 +30,7 @@ my-app/
 
 ### `src/app/routes/`
 
-Sayfaların buraya gelir. Bir dosya = bir sayfa.
+Sayfaların burada. Bir dosya = bir sayfa.
 
 ```
 routes/
@@ -41,7 +41,7 @@ routes/
 
 ### `src/components/ui/`
 
-shadcn/ui'den UI bileşenleri. Daha fazla ekle:
+shadcn/ui bileşenleri. Yenilerini eklemek için:
 
 ::: code-group
 
@@ -65,20 +65,20 @@ yarn dlx shadcn add dialog card
 
 ### `src/lib/`
 
-Yardımcı fonksiyonlar. `cn()` fonksiyonu CSS sınıflarını birleştirir:
+Yardımcı fonksiyonlar. `cn()` fonksiyonu CSS sınıflarını birleştiriyor:
 
 ```tsx
 import { cn } from "@/lib/utils"
 
-// Şöyle kullan:
+// Kullanımı:
 <div className={cn("text-red-500", isActive && "font-bold")} />
 ```
 
-## Dosyalar Nasıl Birlikte Çalışır
+## Dosyalar Ne İş Yapıyor
 
-| Dosya | Ne Yapar |
-|-------|----------|
+| Dosya | Görevi |
+|-------|--------|
 | `main.tsx` | Uygulamayı başlatır |
-| `providers.tsx` | TanStack Query vb. kurar |
-| `router.tsx` | Tüm sayfa rotalarını tanımlar |
+| `providers.tsx` | TanStack Query gibi servisleri ayarlar |
+| `router.tsx` | Sayfa yönlendirmelerini tanımlar |
 | `routes/*.tsx` | Sayfa bileşenlerin |

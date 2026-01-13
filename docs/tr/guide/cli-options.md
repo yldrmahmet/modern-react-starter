@@ -22,9 +22,9 @@ yarn create ronins-react@latest [isim] [seçenekler]
 
 :::
 
-## İsim
+## Proje İsmi
 
-Uygulamanın klasör adı:
+Projenin klasör adı:
 
 ::: code-group
 
@@ -48,11 +48,11 @@ yarn create ronins-react@latest my-app
 
 `my-app/` klasörünü oluşturur.
 
-**İsim yok mu?** Sana soracak.
+**İsim vermezsen?** Sana sorar.
 
-## Mevcut Klasörü Kullan
+## Mevcut Klasörde Oluştur
 
-`.` kullanarak mevcut klasörde oluştur:
+`.` kullanarak bulunduğun klasörde oluştur:
 
 ::: code-group
 
@@ -86,7 +86,7 @@ Klasör boş olmalı!
 
 ### `--clean` veya `-c`
 
-Minimal uygulama oluşturur. Demo dosyaları yok.
+Sade proje oluşturur. Demo dosyaları olmaz.
 
 ::: code-group
 
@@ -108,29 +108,29 @@ yarn create ronins-react@latest my-app --clean
 
 :::
 
-**Kaldırır:**
+**Silinen dosyalar:**
 - `src/app/routes/stack.tsx` (demo sayfası)
 - `public/ronins.svg` (logo)
 
-**Oluşturur:**
-- Basit "Hello World" uygulaması
+**Sonuç:**
+- Sade "Merhaba Dünya" projesi
 
-## Paket Yöneticisi
+## Paket Yöneticisi Algılama
 
-CLI hangi paket yöneticisi kullandığını bilir:
+CLI hangi paket yöneticisi kullandığını anlıyor:
 
-| Çalıştırdığın | Algılanan |
-|---------------|-----------|
+| Komut | Algılanan |
+|-------|-----------|
 | `npm create ronins-react@latest` | npm |
 | `bun create ronins-react@latest` | bun |
 | `pnpm create ronins-react@latest` | pnpm |
 | `yarn create ronins-react@latest` | yarn |
 
-README ve CLAUDE.md dosyaları paket yöneticinin komutlarını kullanır.
+README ve CLAUDE.md dosyaları senin paket yöneticine göre oluşturulur.
 
-## Hatalar
+## Olası Hatalar
 
-| Hata | Neden |
-|------|-------|
-| "Directory exists" | Klasör zaten var. Yeni isim seç. |
-| "Not empty" | Mevcut klasörde dosyalar var. Boş klasör kullan. |
+| Hata | Sebebi |
+|------|--------|
+| "Directory exists" | Aynı isimde klasör var. Farklı isim seç. |
+| "Not empty" | Klasörde dosya var. Boş klasör kullan. |

@@ -3,32 +3,32 @@ layout: home
 
 hero:
   name: Ronins React
-  text: Doğru Araçlar, Zaten Seçilmiş
-  tagline: Araştırmayı bırak. Geliştirmeye başla. Savaşta test edilmiş varsayılanlarla üretime hazır React başlangıcı.
+  text: Doğru Araçlar, Hazır Bekliyor
+  tagline: Araştırmayı bırak. Kodlamaya başla. Kanıtlanmış araçlarla üretime hazır React şablonu.
   actions:
     - theme: brand
       text: Başla
       link: /tr/guide/getting-started
     - theme: alt
-      text: GitHub'da Görüntüle
+      text: GitHub'da İncele
       link: https://github.com/yldrmahmet/create-ronins-react
 
 features:
   - icon:
       src: /vite.svg
     title: Vite 7 + SWC
-    details: Anında HMR ve optimize edilmiş build'ler ile yıldırım hızında geliştirme
+    details: Anında değişiklik yansıması ve optimize edilmiş derleme ile süper hızlı geliştirme
   - icon:
       src: /tailwind.svg
     title: Tailwind CSS 4
-    details: En son özellikler ve performans iyileştirmeleri ile utility-first CSS
+    details: En güncel özellikler ve performans iyileştirmeleriyle modern CSS
   - icon:
       src: /box.svg
-    title: Sıfır Yapılandırma
-    details: Her şey önceden yapılandırılmış. Sadece çalıştır ve kodlamaya başla
+    title: Kurulum Gerektirmez
+    details: Her şey ayarlanmış. Sadece çalıştır ve kodlamaya başla
   - icon:
       src: /more.svg
-    title: Ve Daha Fazlası...
+    title: Ve Dahası...
     details: React 19, TypeScript, shadcn/ui, React Router, TanStack Query, ESLint, Vitest, Husky
     link: /tr/guide/tech-stack
 ---
@@ -37,42 +37,42 @@ features:
 
 ## Neden Ronins React?
 
-JavaScript ekosistemi hızlı ilerliyor. **Çok hızlı.**
+JavaScript dünyası çok hızlı değişiyor. **Fazla hızlı.**
 
-Her hafta yeni framework'ler, yeni bundler'lar, yeni araçlar geliyor. AI bunu daha da hızlandırıyor. Ama sen sadece uygulamanı geliştirmek istiyorsun.
+Her hafta yeni framework'ler, yeni araçlar çıkıyor. Yapay zeka bunu daha da hızlandırıyor. Ama sen sadece uygulamanı yapmak istiyorsun.
 
-**Gerçek:**
+**Gerçekler:**
 
-- npm'de **3+ milyon paket** var — çoğu eski veya güvenli değil
-- **React hala 1 numara** — geliştiricilerin %40'ı kullanıyor, 11 milyon web sitesi
-- Doğru araçları seçmek **günlerce araştırma** gerektirir
+- npm'de **3 milyondan fazla paket** var — çoğu güncel değil veya güvenilir değil
+- **React hala lider** — geliştiricilerin %40'ı kullanıyor, 11 milyon web sitesi
+- Doğru araçları seçmek **günler harcatıyor**
 
-### Araştırmayı Biz Yaptık
+### Biz Araştırdık, Sen Kullan
 
-Ronins React sadece bir şablon değil. **Özenle seçilmiş araçlar.**
+Ronins React sıradan bir şablon değil. **Özenle seçilmiş araçlar topluluğu.**
 
-Birçok aracı test ettik ve en iyilerini seçtik:
+Birçok aracı denedik ve en iyilerini seçtik:
 
-| İhtiyacın | Seçtiğimiz | Neden |
-|-----------|------------|-------|
-| Build Aracı | Vite 7 + SWC | En hızlı geliştirme sunucusu, anında HMR |
-| Stillendirme | Tailwind CSS 4 | Endüstri standardı, sıfır runtime |
-| Bileşenler | shadcn/ui | Kod senin, bağımlılık değil |
-| Yönlendirme | React Router 7 | En popüler, React ekibi onaylı |
-| Sunucu Durumu | TanStack Query 5 | En iyi önbellekleme ve senkronizasyon |
-| Doğrulama | Zod 4 | TypeScript öncelikli, runtime güvenli |
+| Ne Gerekiyor | Ne Seçtik | Neden |
+|--------------|-----------|-------|
+| Derleme Aracı | Vite 7 + SWC | En hızlı geliştirme ortamı, anında yansıma |
+| Stil | Tailwind CSS 4 | Sektör standardı, ekstra yük yok |
+| Bileşenler | shadcn/ui | Kod sende, bağımlılık değil |
+| Sayfa Yönetimi | React Router 7 | En yaygın, React ekibi destekliyor |
+| Veri Yönetimi | TanStack Query 5 | En iyi önbellekleme ve senkronizasyon |
+| Doğrulama | Zod 4 | TypeScript uyumlu, güvenli |
 | Kod Kalitesi | ESLint 9 + Prettier | Temiz, hatasız kod |
 
-### Neden Diğer Seçenekler Değil?
+### Neden Başka Seçenekler Değil?
 
-| Seçenek | Problem |
-|---------|---------|
-| `npm create vite` | Sadece Vite + React verir. Geri kalanını sen eklersin. Saatler alır. |
-| Next.js | Basit uygulamalar için çok karmaşık. Server Components, App Router... |
-| TanStack Start | Çok yeni. Hala beta. Stabil değil. |
-| Create React App | Ölü proje. Güncelleme yok. Çok yavaş. |
+| Seçenek | Sorun |
+|---------|-------|
+| `npm create vite` | Sadece Vite + React verir. Gerisini sen kurarsın. Saatler sürer. |
+| Next.js | Basit projeler için fazla karmaşık. Server Components, App Router... |
+| TanStack Start | Henüz çok yeni. Beta aşamasında. Stabil değil. |
+| Create React App | Artık geliştirilmiyor. Güncelleme yok. Çok yavaş. |
 
-### Sıfır Karar Yorgunluğu
+### Kararları Biz Verdik
 
 ::: code-group
 
@@ -98,9 +98,9 @@ cd my-app && yarn && yarn dev
 
 :::
 
-Bu kadar. Yapılandırma yok. Araştırma yok. Sadece kod.
+Bu kadar. Ayar yok. Araştırma yok. Sadece kodla.
 
-**React web'e güç veriyor. Biz React kurulumuna güç veriyoruz.**
+**React web'in temelini oluşturuyor. Biz de senin React temelini oluşturuyoruz.**
 
 </div>
 

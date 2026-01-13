@@ -1,8 +1,8 @@
 # Komutlar
 
-Paket yöneticini seç. Komutlar her biri için değişir.
+Paket yöneticine göre komutlar değişiyor.
 
-## Geliştirme Sunucusunu Başlat
+## Geliştirme Sunucusu
 
 ::: code-group
 
@@ -24,9 +24,9 @@ yarn dev
 
 :::
 
-`http://localhost:5173` açar. Değişiklikler anında görünür.
+`http://localhost:5173` açılır. Değişiklikler anında yansır.
 
-## Prodüksiyon için Derle
+## Üretime Hazırlama
 
 ::: code-group
 
@@ -48,29 +48,29 @@ yarn build
 
 :::
 
-`dist/` klasörü oluşturur. Bunu sunucuna yükle.
+`dist/` klasörü oluşur. Bunu sunucuna yükle.
 
 ::: details Neden `bun build` değil de `bun run build`?
 
-Bunlar farklı komutlar:
+İkisi farklı şeyler:
 
-| Komut | Ne Yapar |
-|-------|----------|
-| `bun build` | Bun'un bundler'ını kullanır |
-| `bun run build` | package.json'daki "build" scriptini çalıştırır |
+| Komut | Ne Yapıyor |
+|-------|------------|
+| `bun build` | Bun'un kendi derleyicisini kullanır |
+| `bun run build` | package.json'daki "build" komutunu çalıştırır |
 
-`bun run build` kullanıyoruz çünkü **Vite'ın bundler'ını** çalıştırır.
+`bun run build` kullanıyoruz çünkü **Vite'ın derleyicisini** çalıştırıyor.
 
-**Neden Vite, Bun'un bundler'ı değil?**
+**Neden Vite, Bun değil?**
 - Vite'ın daha fazla özelliği var
 - Vite'ın daha fazla eklentisi var
-- Vite yıllardır React ile test edildi
+- Vite yıllardır React ile test edilmiş
 
-**Bun kod çalıştırma için hızlı. Vite build için daha iyi.**
+**Bun kod çalıştırmada hızlı. Vite derleme için daha iyi.**
 
 :::
 
-## Kodu Kontrol Et
+## Kod Kontrolü
 
 ::: code-group
 
@@ -93,11 +93,11 @@ yarn check
 :::
 
 Tüm kontrolleri çalıştırır:
-- ESLint (hata bul)
-- Prettier (format kontrol)
-- TypeScript (tip kontrol)
+- ESLint (hata tespiti)
+- Prettier (format kontrolü)
+- TypeScript (tip kontrolü)
 
-## Hata Bul (Lint)
+## Hata Tespiti (Lint)
 
 ::: code-group
 
@@ -141,7 +141,7 @@ yarn lint --fix
 
 :::
 
-## Kodu Formatla
+## Kod Düzenleme
 
 ::: code-group
 
@@ -163,9 +163,9 @@ yarn format
 
 :::
 
-Kodu güzel yapar. Boşlukları, tırnakları vb. düzeltir.
+Kodu düzenler. Boşlukları, tırnakları vb. standartlaştırır.
 
-## Testleri Çalıştır
+## Testler
 
 ::: code-group
 
@@ -189,7 +189,7 @@ yarn test
 
 Testleri çalıştırır. Değişiklikleri izler.
 
-Bir kez çalıştır (CI için):
+Tek seferlik çalıştırma (CI için):
 
 ::: code-group
 
@@ -211,7 +211,7 @@ yarn test:run
 
 :::
 
-## Demo İçeriği Kaldır
+## Demo İçeriği Temizle
 
 ::: code-group
 
@@ -233,17 +233,17 @@ yarn clean
 
 :::
 
-Demo dosyalarını kaldırır. Temiz "Hello World" uygulaması verir.
+Demo dosyalarını siler. Sade bir "Merhaba Dünya" projesi kalır.
 
 ## Tüm Komutlar
 
-| Komut | Ne Yapar |
-|-------|----------|
+| Komut | Görevi |
+|-------|--------|
 | `dev` | Geliştirme sunucusunu başlat |
-| `build` | Prodüksiyon için derle |
+| `build` | Üretime hazırla |
 | `check` | Tüm kontrolleri çalıştır |
-| `lint` | Hata bul |
-| `format` | Kodu güzelleştir |
-| `test` | Testleri çalıştır (izle) |
-| `test:run` | Testleri çalıştır (bir kez) |
-| `clean` | Demo dosyalarını kaldır |
+| `lint` | Hataları tespit et |
+| `format` | Kodu düzenle |
+| `test` | Testleri çalıştır (izleme modu) |
+| `test:run` | Testleri çalıştır (tek sefer) |
+| `clean` | Demo dosyalarını temizle |

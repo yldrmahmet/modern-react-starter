@@ -36,11 +36,11 @@ yarn dev
 
 :::
 
-Tarayıcında `http://localhost:5173` adresini aç. Tamam!
+Tarayıcında `http://localhost:5173` adresini aç. Hazırsın!
 
-## Temiz Mod
+## Sade Başlangıç
 
-Minimal bir uygulama mı istiyorsun? Demo sayfaları yok mu? `--clean` kullan:
+Minimum bir proje mi istiyorsun? Demo sayfaları olmasın mı? `--clean` kullan:
 
 ::: code-group
 
@@ -62,15 +62,15 @@ yarn create ronins-react@latest my-app --clean
 
 :::
 
-Bunları kaldırır:
+Şunları kaldırır:
 - Demo sayfaları
 - Logo dosyası
 
-Basit bir "Hello World" uygulaması alırsın.
+Sade bir "Merhaba Dünya" projesi elde edersin.
 
-## Mevcut Klasörü Kullan
+## Mevcut Klasörde Oluştur
 
-Bulunduğun klasörde oluşturmak mı istiyorsun? `.` kullan:
+Şu an bulunduğun klasörde mi oluşturmak istiyorsun? `.` kullan:
 
 ::: code-group
 
@@ -100,8 +100,8 @@ yarn create ronins-react@latest .
 Klasör boş olmalı.
 :::
 
-## Sırada Ne Var?
+## Sonraki Adımlar
 
-- [Proje Yapısı](/tr/guide/project-structure) — Tüm dosyaları gör
-- [Komutlar](/tr/guide/commands) — Tüm komutları gör
-- [Bileşen Ekle](/tr/guide/adding-components) — Butonlar, diyaloglar vb. ekle
+- [Proje Yapısı](/tr/guide/project-structure) — Tüm dosyaları incele
+- [Komutlar](/tr/guide/commands) — Kullanabileceğin komutlar
+- [Bileşen Ekle](/tr/guide/adding-components) — Buton, modal gibi bileşenler ekle

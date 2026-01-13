@@ -2,15 +2,15 @@
 
 ## shadcn/ui Nedir?
 
-[shadcn/ui](https://ui.shadcn.com) sana hazır bileşenler verir:
+[shadcn/ui](https://ui.shadcn.com) hazır bileşenler sunuyor:
 - Butonlar
-- Diyaloglar (popup'lar)
+- Modallar (açılır pencereler)
 - Formlar
 - Kartlar
 - Tablolar
 - Ve daha fazlası...
 
-**Önemli:** Bileşenler SENİN koduna gider. node_modules'a değil. Değiştirebilirsin.
+**Önemli:** Bileşenler senin proje dosyalarına ekleniyor. node_modules'a değil. İstediğin gibi değiştirebilirsin.
 
 ## Bileşen Ekle
 
@@ -34,7 +34,7 @@ yarn dlx shadcn add button
 
 :::
 
-Bu `src/components/ui/button.tsx` oluşturur.
+Bu komut `src/components/ui/button.tsx` dosyasını oluşturur.
 
 ## Birden Fazla Bileşen Ekle
 
@@ -60,19 +60,19 @@ yarn dlx shadcn add dialog card form input
 
 ## Popüler Bileşenler
 
-| Bileşen | Ne Yapar |
-|---------|----------|
+| Bileşen | Ne İşe Yarıyor |
+|---------|----------------|
 | button | Tıklanabilir buton |
-| dialog | Popup pencere |
-| card | İçerikli kutu |
-| input | Metin alanı |
+| dialog | Açılır pencere (modal) |
+| card | İçerik kutusu |
+| input | Metin girişi |
 | form | Doğrulamalı form |
 | table | Veri tablosu |
-| select | Açılır menü |
+| select | Açılır liste |
 | tabs | Sekme navigasyonu |
 | sonner | Bildirimler |
 
-Hepsini gör: [ui.shadcn.com/docs/components](https://ui.shadcn.com/docs/components)
+Tümünü gör: [ui.shadcn.com/docs/components](https://ui.shadcn.com/docs/components)
 
 ## Nasıl Kullanılır
 
@@ -82,13 +82,13 @@ import { Button } from "@/components/ui/button"
 export default function MyPage() {
   return (
     <Button onClick={() => alert("Merhaba!")}>
-      Tıkla Beni
+      Tıkla
     </Button>
   )
 }
 ```
 
-## Diyalog Örneği
+## Modal Örneği
 
 ```tsx
 import { Button } from "@/components/ui/button"
@@ -104,22 +104,22 @@ export default function MyPage() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button>Popup Aç</Button>
+        <Button>Modalı Aç</Button>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>Merhaba!</DialogTitle>
         </DialogHeader>
-        <p>Bu bir popup.</p>
+        <p>Bu bir modal pencere.</p>
       </DialogContent>
     </Dialog>
   )
 }
 ```
 
-## Bileşenleri Değiştir
+## Bileşenleri Özelleştir
 
-Bileşenler `src/components/ui/` içinde. Aç ve düzenle.
+Bileşenler `src/components/ui/` klasöründe. Aç ve düzenle.
 
 Örnek - yeşil buton ekle:
 
@@ -132,7 +132,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-white",
-        // Kendininkini ekle:
+        // Kendi varyantını ekle:
         success: "bg-green-500 text-white hover:bg-green-600",
       }
     }
@@ -140,7 +140,7 @@ const buttonVariants = cva(
 )
 ```
 
-Şimdi kullan:
+Şimdi kullanabilirsin:
 
 ```tsx
 <Button variant="success">Kaydet</Button>
@@ -148,7 +148,7 @@ const buttonVariants = cva(
 
 ## Renkleri Değiştir
 
-`src/index.css`'i düzenle:
+`src/index.css` dosyasını düzenle:
 
 ```css
 :root {
@@ -156,4 +156,4 @@ const buttonVariants = cva(
 }
 ```
 
-Tema oluşturucu ister misin? Git [ui.shadcn.com/themes](https://ui.shadcn.com/themes)
+Tema oluşturucu mu istiyorsun? [ui.shadcn.com/themes](https://ui.shadcn.com/themes) adresine git
