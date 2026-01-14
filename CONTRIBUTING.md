@@ -24,6 +24,7 @@ First off, thanks for taking the time to contribute!
 1. Fork the repo and create your branch from `main`
 2. Make your changes
 3. Test your changes locally:
+
    ```bash
    # Test the CLI
    node index.js test-app
@@ -32,16 +33,19 @@ First off, thanks for taking the time to contribute!
    bun dev
    bun check
    ```
-4. Commit with a clear message (no emojis):
+
+4. Commit with a clear message:
+
    ```bash
    git commit -m "feat: add new feature"
    git commit -m "fix: resolve issue with..."
    ```
+
 5. Push and open a PR
 
 ### Commit Message Format
 
-```
+```bash
 type: description
 
 # Types:

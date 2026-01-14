@@ -1,3 +1,12 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+build
+.output
+
 # Logs
 logs
 *.log
@@ -7,18 +16,54 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+
+# Secrets and keys
+*.pem
+*.key
+*.crt
+*.p12
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage
+.nyc_output
+
+# Deploy platforms
+.vercel
+.netlify
+.amplify
+
+# Cache
+.cache
+.parcel-cache
+.turbo
+.vite
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+*.local
+.temp
+.tmp

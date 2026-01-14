@@ -6,6 +6,17 @@
 import { existsSync, rmSync, writeFileSync, readFileSync } from "node:fs";
 import { createInterface } from "node:readline";
 
+function detectPackageManager() {
+  if (existsSync("bun.lock") || existsSync("bun.lockb")) return "bun";
+  if (existsSync("pnpm-lock.yaml")) return "pnpm";
+  if (existsSync("yarn.lock")) return "yarn";
+  return "npm";
+}
+
+function getDevCommand(pm) {
+  return pm === "npm" ? "npm run dev" : `${pm} dev`;
+}
+
 const FILES_TO_DELETE = [
   "src/app/routes/stack.tsx",
   "public/ronins.png",
@@ -64,12 +75,18 @@ function createMinimalAppPage() {
 
 function updateRouter() {
   const content = `import { createBrowserRouter } from "react-router";
+import RootLayout from "./layouts/RootLayout";
 import App from "./routes/app";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
+    element: <RootLayout />,
+    children: [
+      {
+        path: "/",
+        element: <App />,
+      },
+    ],
   },
 ]);
 `;
@@ -129,9 +146,12 @@ async function main() {
   updateRouter();
   updateIndexHtml();
 
+  const pm = detectPackageManager();
+  const devCmd = getDevCommand(pm);
+
   console.log();
   log("Done! Your project is now a blank slate.", "green");
-  log("Run 'bun dev' to start development.", "dim");
+  log(`Run '${devCmd}' to start development.`, "dim");
   console.log();
 }
 

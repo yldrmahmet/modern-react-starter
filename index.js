@@ -147,9 +147,11 @@ ${runCmd} test:run      # Run tests once
 \`\`\`
 src/
 ├── app/
+│   ├── layouts/         # Layout components
+│   │   └── RootLayout.tsx
 │   ├── routes/          # Page components
-│   │   └── app.tsx      # Root page
-│   ├── providers.tsx    # Global providers (QueryClient, etc.)
+│   │   └── app.tsx
+│   ├── providers.tsx    # Global providers (apiCache, etc.)
 │   └── router.tsx       # Router configuration
 ├── components/
 │   ├── ui/              # shadcn/ui components
@@ -164,13 +166,15 @@ src/
 
 **Separation of Concerns:**
 - \`main.tsx\` - Only renders the app (StrictMode, Providers, Router)
-- \`providers.tsx\` - All global providers wrapped in one place
+- \`providers.tsx\` - All global providers wrapped in one place (apiCache, etc.)
 - \`router.tsx\` - All route definitions centralized
+- \`layouts/\` - Shared layout components (RootLayout wraps all routes)
 - \`routes/\` - Page components only
 
 **Why this structure:**
 - Router config separate from entry point for easier route management
 - Providers isolated for cleaner testing and composition
+- Layouts handle shared UI (VersionInfo, navigation, etc.)
 - Routes folder scales well as app grows
 
 ---
@@ -215,6 +219,8 @@ const Button: React.FC<ButtonProps> = ({ label }) => { ... };
 const Button = ({ label }: ButtonProps) => { ... };
 export default Button;
 \`\`\`
+
+**Exception:** shadcn/ui components in \`src/components/ui/\` follow their own conventions (named exports, \`import * as React\`). Do not modify shadcn/ui generated code style.
 
 ### Naming Conventions
 
@@ -346,12 +352,18 @@ function cleanProject(targetDir) {
   writeFileSync(resolve(targetDir, "src/app/routes/app.tsx"), minimalApp);
 
   const minimalRouter = `import { createBrowserRouter } from "react-router";
+import RootLayout from "./layouts/RootLayout";
 import App from "./routes/app";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
+    element: <RootLayout />,
+    children: [
+      {
+        path: "/",
+        element: <App />,
+      },
+    ],
   },
 ]);
 `;
